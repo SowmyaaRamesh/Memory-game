@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="shuffle();countDown();">
+    <div class="container">
+      <h1>Memory Game</h1>
+      <section class="scoreBoard">
+        <h2>Level <span id="level">1</span></h1>
+        <h2>Seconds Left : <span id="timer"></span></h1>
+        <h2>Score : <span id="score">0</span></h3>
+        <h2 id="result"></h2>
+        <button id="level-btn">Next Level</button>
+      </section>
+    </div>
+
+    <section class="board">
+      <div class="card" data-framework="lemon">
+        <img src="images/lemon.png" alt="lemon" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="lemon">
+        <img src="images/lemon.png" alt="lemon" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="mango">
+        <img src="images/mango.png" alt="mango" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="mango">
+        <img src="images/mango.png" alt="mango" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="orange">
+        <img src="images/orange.png" alt="orange" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="orange">
+        <img src="images/orange.png" alt="orange" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+
+      <div class="card" data-framework="grapes">
+        <img src="images/grapes.png" alt="grapes" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="grapes">
+        <img src="images/grapes.png" alt="grapes" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="cherry">
+        <img src="images/cherry.png" alt="cherry" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="cherry">
+        <img src="images/cherry.png" alt="cherry" class="front" width="80px" />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+
+      <div class="card" data-framework="watermelon">
+        <img
+          src="images/watermelon.png"
+          alt="watermelon"
+          class="front"
+          width="80px"
+        />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+      <div class="card" data-framework="watermelon">
+        <img
+          src="images/watermelon.png"
+          alt="watermelon"
+          class="front"
+          width="80px"
+        />
+        <img
+          class="back"
+          src="images/front.jpg"
+          alt="front-card"
+          width="150px"
+        />
+      </div>
+    </section>
+  </body>
+</html>
